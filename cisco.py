@@ -35,7 +35,7 @@ def configure_switch(ip, username, password):
 
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    ssh.connect(ip, username=username, password=password)
+    ssh.connect(ip, username=natania, password=888)
 
     shell = ssh.invoke_shell()
     for cmd in commands:
